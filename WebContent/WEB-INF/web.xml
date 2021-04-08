@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ENIEncheres</display-name>
+  <welcome-file-list>
+    <welcome-file>accueil</welcome-file>
+  </welcome-file-list>
+  
+<!-- <servlet>
+  	<servlet-name>Accueil</servlet-name>
+  	<jsp-file>/WEB-INF/accueil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Accueil</servlet-name>
+  	<url-pattern>/accueil</url-pattern>
+  </servlet-mapping>  -->
+ 
+  <servlet>
+  	<servlet-name>Connexion</servlet-name>
+  	<jsp-file>/WEB-INF/connexion_utilisateur.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Connexion</servlet-name>
+  	<url-pattern>/connexion</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Profil</servlet-name>
+  	<jsp-file>/WEB-INF/profil_utilisateur.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Profil</servlet-name>
+  	<url-pattern>/profil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>NewUtilisateur</servlet-name>
+  	<jsp-file>/WEB-INF/nouvel_utilisateur.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>NewUtilisateur</servlet-name>
+  	<url-pattern>/newUtilisateur</url-pattern>
+  </servlet-mapping>
+  
+ <!--  <servlet>
+  	<servlet-name>LoginUser</servlet-name>
+  	<jsp-file>/WEB-INF/connexion_utilisateur.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginUser</servlet-name>
+  	<url-pattern>/loginUser</url-pattern>
+  </servlet-mapping> -->
+  
+  </web-app>
